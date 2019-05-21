@@ -1,31 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr" ng-app="app">
 <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/united/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>L'Éternelle moisson - Dofus Ocre</title>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/united/bootstrap.min.css" />
-    <style>
-        body {
-            padding-top: 60px;
-        }
-
-        .label {
-            margin-right: 5px;
-        }
-
-        tbody tr {
-            cursor: pointer;
-        }
-    </style>
+    <title>L'Éternelle moisson - Ma Grosse Bihilète</title>
 </head>
 
 <body ng-controller="AppCtrl as appCtrl">
-    <a href="https://github.com/Mopolo/Eternelle-Moisson"><img style="position: absolute; top: 0; right: 0; border: 0;z-index: 10000;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
-
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -100,7 +85,7 @@
 
                 <div class="row">
                     <div class="col-xs-12">
-                        Total : {{ appCtrl.owned() }}/{{ appCtrl.monsters.length }}
+                        Total des monstres capturés : {{ appCtrl.owned() }}/{{ appCtrl.monsters.length }}
 
                         <div class="progress">
                             <div class="progress-bar progress-bar-primary progress-bar-striped" role="progressbar" aria-valuenow="{{ appCtrl.ownedPercentage() }}" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: {{ appCtrl.ownedPercentage() }}%;">
@@ -297,9 +282,8 @@
                     </p>
 
                     <p>
-                        Si vous trouvez un bug, avez une idée ou si la liste des monstres n'est pas à jour,
-                        contribuez sur <a href="https://github.com/Mopolo/Eternelle-Moisson">Github</a> en faisant
-                        une Pull Request ou en créant une issue.
+                        Si vous trouvez un bug ou si la liste des monstres n'est pas à jour,
+                        contactez "Matratio" ou "Naekhan" par MP dans le jeu.
                     </p>
                 </div>
                 <div class="modal-footer">
@@ -314,21 +298,15 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="aboutModalLabel">A Propos</h4>
+                    <h4 class="modal-title" id="aboutModalLabel">A Propos de Ma Grosse Bihilète</h4>
                 </div>
                 <div class="modal-body">
                     <p>
-                        Ce site est libre et open source sur <a href="https://github.com/Mopolo/Eternelle-Moisson">Github</a>
-                        et est écrit en AngularJS (version 1.x).
+                        Cette guilde à pour ambition de dominer le monde des douze à moyen terme et de rester toujours vivante à plus court terme.
                     </p>
 
                     <p>
-                        Les contributions sont les bienvenues.
-                    </p>
-
-                    <p>
-                        Le code source est distribué sous licence MIT, vous avez donc le droit de le copier/modifier/distribuer
-                        et de l'héberger vous même si vous préférez.
+                        Tous les joueurs sont les bienvenus dans la guilde.
                     </p>
                 </div>
                 <div class="modal-footer">
