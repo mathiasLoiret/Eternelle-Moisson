@@ -9,8 +9,18 @@
 .navbar-inverse{
     background-color: #670453;
 }
-
-
+.mgbPresentation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.mgbTitle{
+    font-size:3em
+}
+.mgbLogo{
+    width: 150px;
+}
 
 
 
